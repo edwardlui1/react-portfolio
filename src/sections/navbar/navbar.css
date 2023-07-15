@@ -1,0 +1,41 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transition: var(--transition);
+    background-color: #FFC17A;
+    color: #fff;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 0;
+}
+
+.nav_menu li {
+    margin: 0 10px;
+}
+
+.nav_menu li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav_menu {
+        display: none;
+    }
+}
